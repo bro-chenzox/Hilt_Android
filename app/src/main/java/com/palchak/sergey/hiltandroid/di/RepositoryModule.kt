@@ -1,6 +1,5 @@
 package com.palchak.sergey.hiltandroid.di
 
-import androidx.annotation.MainThread
 import com.palchak.sergey.hiltandroid.repository.MainRepository
 import com.palchak.sergey.hiltandroid.retrofit.BlogRetrofit
 import com.palchak.sergey.hiltandroid.retrofit.NetworkMapper

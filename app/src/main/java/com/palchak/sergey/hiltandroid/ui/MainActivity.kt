@@ -1,11 +1,10 @@
 package com.palchak.sergey.hiltandroid.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
 import com.palchak.sergey.hiltandroid.R
 import com.palchak.sergey.hiltandroid.databinding.ActivityMainBinding
 import com.palchak.sergey.hiltandroid.model.Blog
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun subscribeObservers() {
-        viewModel.dataState.observe(this, Observer { dataState ->
+        viewModel.dataState.observe(this, { dataState ->
             when (dataState) {
                 is DataState.Success -> {
                     displayProgressBar(false)
