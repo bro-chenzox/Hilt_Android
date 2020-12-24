@@ -5,7 +5,7 @@ buildscript {
         hilt_android_gradle_plugin_version = "2.30.1-alpha"
         hilt_version = "1.0.0-alpha02"
         retrofit_version = "2.9.0"
-        room_version = "2.2.5"
+        room_version = '2.2.6'
     }
     repositories {
         google()
