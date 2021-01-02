@@ -2,11 +2,7 @@
 
 ##############################################################################
 ##
-<<<<<<< HEAD
-##  Gradle start up script for UN*X BRO 1 second
-=======
-##  Gradle start up script for UN*X BRO 2 first
->>>>>>> b05f6fa2078a5ee9f386484916cb2ccb9fc0c01d
+##  Gradle start up script for UN*X
 ##
 ##############################################################################
 
