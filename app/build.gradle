@@ -52,10 +52,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation "com.google.dagger:hilt-android:$hilt_android_gradle_plugin_version"
-    kapt "com.google.dagger:hilt-android-compiler:$hilt_android_gradle_plugin_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_android_gradle_plugin_version"
 
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_version"
-    kapt "androidx.hilt:hilt-compiler:$hilt_version"
 
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"

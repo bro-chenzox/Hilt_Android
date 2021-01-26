@@ -6,15 +6,17 @@ import androidx.lifecycle.*
 import com.palchak.sergey.hiltandroid.model.Blog
 import com.palchak.sergey.hiltandroid.repository.MainRepository
 import com.palchak.sergey.hiltandroid.util.DataState
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
-
+import javax.inject.Inject
+@HiltViewModel
 class MainViewModel
-@ViewModelInject constructor(
+@Inject constructor(
     private val mainRepository: MainRepository,
-    @Assisted private val savedStateHandle: SavedStateHandle
+    private val savedStateHandle: SavedStateHandle
 ) : ViewModel(){
 
     private val _dataState: MutableLiveData<DataState<List<Blog>>> = MutableLiveData()
